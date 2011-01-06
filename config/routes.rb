@@ -1,5 +1,6 @@
 Gpanda::Application.routes.draw do
   get "users/new"
+    match '/signup', :to => 'users#new'
 
     match '/contact', :to => 'pages#contact'
     
@@ -15,7 +16,6 @@ Gpanda::Application.routes.draw do
     
     match '/news', :to => 'pages#news'
     
-    match '/signup', :to => 'users#new'
     
     root :to => 'pages#home'
     
