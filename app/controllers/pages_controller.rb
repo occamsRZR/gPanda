@@ -14,5 +14,21 @@ class PagesController < ApplicationController
   def contact
     @title = "Contact"
   end
+  
+  def help
+    @title = "Help"
+  end
+  
+  def user
+    @title = "User"
+  end
+  
+  def job
+    @title = "Job"
+  end
+  
+  def news
+    @title = "News"
+  end
 
 end
