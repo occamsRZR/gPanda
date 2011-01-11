@@ -1,5 +1,14 @@
 Gpanda::Application.routes.draw do
-  get "users/new"
+  resources :jobs
+  
+  match '/submit', :to => 'jobs#new'    
+  
+
+#  resources :users
+  
+  #get "jobs/show"
+
+  #get "users/new"
     match '/signup', :to => 'users#new'
 
     match '/contact', :to => 'pages#contact'
@@ -16,6 +25,8 @@ Gpanda::Application.routes.draw do
     
     match '/news', :to => 'pages#news'
     
+
+#    match '/jobs', :to => 'jobs#index'
     
     root :to => 'pages#home'
     

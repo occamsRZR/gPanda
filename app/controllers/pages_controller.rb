@@ -20,15 +20,16 @@ class PagesController < ApplicationController
   end
   
   def user
-    @title = "User"
+    @title = "Users"
   end
   
   def job
-    @title = "Job"
+    @title = "Jobs"
   end
   
   def news
     @title = "News"
   end
+
 
 end
