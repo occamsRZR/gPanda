@@ -1,23 +1,31 @@
 Gpanda::Application.routes.draw do
-    resources :users
- 
-    match '/signup', :to => 'users#new'
+  resources :users
+   
+  resources :jobs
+  
+  resources :results
+  
+  match '/submit', :to => 'jobs#new'    
+  
+  match '/signup', :to => 'users#new'
 
-    match '/contact', :to => 'pages#contact'
+  match '/contact', :to => 'pages#contact'
+  
+  match '/about', :to => 'pages#about'
     
-    match '/about', :to => 'pages#about'
+  match '/demo', :to => 'pages#demo'
+  
+  match '/help', :to => 'pages#help'
     
-    match '/demo', :to => 'pages#demo'
+  match '/user', :to => 'pages#user'
     
-    match '/help', :to => 'pages#help'
+  match '/job', :to => 'pages#job'
     
-    match '/user', :to => 'pages#user'
+  match '/news', :to => 'pages#news'
+  
+  match '/jobs', :to => 'jobs#index'
     
-    match '/job', :to => 'pages#job'
-    
-    match '/news', :to => 'pages#news'
-    
-    root :to => 'pages#home'
+  root :to => 'pages#home'
     
 
   # The priority is based upon order of creation:

@@ -1,0 +1,37 @@
+<table class="job" summary="Job information">
+  <tr>
+    <td class="main">
+      <h1>
+      Results:
+      </h1>
+      <table class="results">
+        <td>
+          <strong>gi</strong>
+        </td>
+        <td>
+          <strong>score</strong>
+        </td>
+        <% @results.each do |result|  %>
+          <tr>
+            <td>
+              <%= link_to result.gi, result %>
+            </td>
+            <td>
+              <%= result.score %>
+            </td>
+          <tr>
+        <% end %>
+        some results
+      </table>
+
+
+    </td>
+    <td class="sidebar round">
+      <strong>Name:</strong> <%= @job.name %> <br />
+      <strong>Method:</strong> <%= @job.method %> <br />
+      <strong>Genome:</strong> <i><%= @job.genome %> </i><br />
+      <strong>Public?</strong> <%= @job.public %> <br />
+      <strong>URL:</strong> <%= link_to job_path(@job), @job%> <br />
+    </td>
+  </tr>
+</table>

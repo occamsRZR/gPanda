@@ -1,17 +1,27 @@
-1294860513
+1294862081
 AddEmailUniquenessIndex	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110107232127_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
+AddMethodToJobs	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111025610_add_method_to_jobs.rb	class AddMethodToJobs 
 AddPasswordToUsers	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108010746_add_password_to_users.rb	class AddPasswordToUsers 
 AddSaltToUsers	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108020818_add_salt_to_users.rb	class AddSaltToUsers 
+AddUserIdToJobs	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111045127_add_user_id_to_jobs.rb	class AddUserIdToJobs 
 Application	/Users/bfulk/dir1/rails_projects/gpanda/config/application.rb	  class Application 
 ApplicationController	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/Users/bfulk/dir1/rails_projects/gpanda/app/helpers/application_helper.rb	module ApplicationHelper
 BrowsingTest	/Users/bfulk/dir1/rails_projects/gpanda/test/performance/browsing_test.rb	class BrowsingTest 
+CreateJobs	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111012457_create_jobs.rb	class CreateJobs 
+CreateResults	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111215408_create_results.rb	class CreateResults 
 CreateUsers	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110107024349_create_users.rb	class CreateUsers 
 Gpanda	/Users/bfulk/dir1/rails_projects/gpanda/config/application.rb	module Gpanda
+Job	/Users/bfulk/dir1/rails_projects/gpanda/app/models/job.rb	class Job 
+JobsController	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/jobs_controller.rb	class JobsController 
+JobsHelper	/Users/bfulk/dir1/rails_projects/gpanda/app/helpers/jobs_helper.rb	module JobsHelper
 PagesController	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/pages_controller.rb	class PagesController 
 PagesControllerTest	/Users/bfulk/dir1/rails_projects/gpanda/test/functional/pages_controller_test.rb	class PagesControllerTest 
 PagesHelper	/Users/bfulk/dir1/rails_projects/gpanda/app/helpers/pages_helper.rb	module PagesHelper
 PagesHelperTest	/Users/bfulk/dir1/rails_projects/gpanda/test/unit/helpers/pages_helper_test.rb	class PagesHelperTest 
+Result	/Users/bfulk/dir1/rails_projects/gpanda/app/models/result.rb	class Result 
+ResultsController	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/results_controller.rb	class ResultsController 
+ResultsHelper	/Users/bfulk/dir1/rails_projects/gpanda/app/helpers/results_helper.rb	module ResultsHelper
 Str	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function Str(key, holder, stack)
 TestCase	/Users/bfulk/dir1/rails_projects/gpanda/test/test_helper.rb	class ActiveSupport::TestCase
 Type	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function Type(o)
@@ -62,6 +72,10 @@ down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110107024349_create_us
 down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110107232127_add_email_uniqueness_index.rb	  def self.down
 down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108010746_add_password_to_users.rb	  def self.down
 down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108020818_add_salt_to_users.rb	  def self.down
+down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111012457_create_jobs.rb	  def self.down
+down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111025610_add_method_to_jobs.rb	  def self.down
+down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111045127_add_user_id_to_jobs.rb	  def self.down
+down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111215408_create_results.rb	  def self.down
 each	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function each(iterator)
 each	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -105,6 +119,7 @@ inGroupsOf	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.
 include	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function include(object)
 include	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function include(pattern)
 include	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function include(value)
+index	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/jobs_controller.rb	  def index
 index	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/users_controller.rb	  def index
 index	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function index(value)
 indexOf	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function indexOf(item, i)
@@ -153,6 +168,7 @@ merge	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	fu
 merge	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function merge(object)
 methodize	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function methodize()
 min	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function min(iterator, context)
+new	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/jobs_controller.rb	  def new
 new	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/users_controller.rb	  def new
 news	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/pages_controller.rb	  def news
 observe	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function observe(element, eventName, handler)
@@ -178,6 +194,8 @@ secure_hash	/Users/bfulk/dir1/rails_projects/gpanda/app/models/user.rb	    def s
 select	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function select()
 select	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function select(selector, scope)
 set	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function set(key, value)
+show	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/jobs_controller.rb	  def show
+show	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/results_controller.rb	  def show
 show	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/users_controller.rb	  def show
 size	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function size()
 size	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function size()
@@ -223,6 +241,10 @@ up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110107024349_create_user
 up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110107232127_add_email_uniqueness_index.rb	  def self.up
 up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108010746_add_password_to_users.rb	  def self.up
 up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108020818_add_salt_to_users.rb	  def self.up
+up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111012457_create_jobs.rb	  def self.up
+up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111025610_add_method_to_jobs.rb	  def self.up
+up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111045127_add_user_id_to_jobs.rb	  def self.up
+up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111215408_create_results.rb	  def self.up
 update	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function update(array, args)
 update	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function update(element, content)
 update	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function update(object)
