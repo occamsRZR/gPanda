@@ -1,6 +1,6 @@
-1294862081
+1294875182
 AddEmailUniquenessIndex	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110107232127_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
-AddMethodToJobs	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111025610_add_method_to_jobs.rb	class AddMethodToJobs 
+AddLengthToResults	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110112214339_add_length_to_results.rb	class AddLengthToResults 
 AddPasswordToUsers	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108010746_add_password_to_users.rb	class AddPasswordToUsers 
 AddSaltToUsers	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108020818_add_salt_to_users.rb	class AddSaltToUsers 
 AddUserIdToJobs	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111045127_add_user_id_to_jobs.rb	class AddUserIdToJobs 
@@ -73,9 +73,9 @@ down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110107232127_add_email
 down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108010746_add_password_to_users.rb	  def self.down
 down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108020818_add_salt_to_users.rb	  def self.down
 down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111012457_create_jobs.rb	  def self.down
-down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111025610_add_method_to_jobs.rb	  def self.down
 down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111045127_add_user_id_to_jobs.rb	  def self.down
 down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111215408_create_results.rb	  def self.down
+down	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110112214339_add_length_to_results.rb	  def self.down
 each	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function each(iterator)
 each	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -242,9 +242,9 @@ up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110107232127_add_email_u
 up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108010746_add_password_to_users.rb	  def self.up
 up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108020818_add_salt_to_users.rb	  def self.up
 up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111012457_create_jobs.rb	  def self.up
-up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111025610_add_method_to_jobs.rb	  def self.up
 up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111045127_add_user_id_to_jobs.rb	  def self.up
 up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110111215408_create_results.rb	  def self.up
+up	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110112214339_add_length_to_results.rb	  def self.up
 update	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function update(array, args)
 update	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function update(element, content)
 update	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function update(object)

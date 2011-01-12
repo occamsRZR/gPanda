@@ -1,1 +1,38 @@
-<%= @user.name %>, <%= @user.email %>
+<table class="profile" summary="User information">
+  <tr>
+    <td class="main">
+      <h1>
+      <%= @user.name%>
+      </h1>
+      <table class="profile">
+        <td>
+          <strong>Job Name</strong>
+        </td>
+        <td>
+          <strong>Method</strong>
+        </td>
+        <td>
+          <strong>Results</strong>
+        </td>
+        <% @jobs.each do |job|  %>
+          <tr>
+            <td>
+              <%= link_to job.name, job %>
+            </td>
+            <td>
+              <%= job.method %>
+            </td>
+            <td>
+              <%= job.results.count %>
+            </td>
+          <tr>
+        <% end %>
+      </table>
+    </td>
+    <td class="sidebar round">
+      <strong>Email:</strong> <%= @user.email %> <br />
+      <strong>Jobs:</strong> <%= @user.jobs.count %> <br />
+      <strong>URL:</strong> <%= link_to user_path(@user), @user%> <br />
+    </td>
+  </tr>
+</table>

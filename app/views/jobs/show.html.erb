@@ -21,13 +21,11 @@
             </td>
           <tr>
         <% end %>
-        some results
       </table>
-
-
     </td>
     <td class="sidebar round">
       <strong>Name:</strong> <%= @job.name %> <br />
+      <strong>User:</strong> <%= @job.user.name %> <br />
       <strong>Method:</strong> <%= @job.method %> <br />
       <strong>Genome:</strong> <i><%= @job.genome %> </i><br />
       <strong>Public?</strong> <%= @job.public %> <br />
