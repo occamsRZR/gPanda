@@ -1,4 +1,4 @@
-1294729488
+1294791190
 AddMethodToJobs	/home/bfulk/rails_projects/gPanda/db/migrate/20110111025610_add_method_to_jobs.rb	class AddMethodToJobs 
 AddUserIdToJobs	/home/bfulk/rails_projects/gPanda/db/migrate/20110111045127_add_user_id_to_jobs.rb	class AddUserIdToJobs 
 Application	/home/bfulk/rails_projects/gPanda/config/application.rb	  class Application 
@@ -6,6 +6,7 @@ ApplicationController	/home/bfulk/rails_projects/gPanda/app/controllers/applicat
 ApplicationHelper	/home/bfulk/rails_projects/gPanda/app/helpers/application_helper.rb	module ApplicationHelper
 BrowsingTest	/home/bfulk/rails_projects/gPanda/test/performance/browsing_test.rb	class BrowsingTest 
 CreateJobs	/home/bfulk/rails_projects/gPanda/db/migrate/20110111012457_create_jobs.rb	class CreateJobs 
+CreateResults	/home/bfulk/rails_projects/gPanda/db/migrate/20110111215408_create_results.rb	class CreateResults 
 Gpanda	/home/bfulk/rails_projects/gPanda/config/application.rb	module Gpanda
 Job	/home/bfulk/rails_projects/gPanda/app/models/job.rb	class Job 
 JobsController	/home/bfulk/rails_projects/gPanda/app/controllers/jobs_controller.rb	class JobsController 
@@ -14,6 +15,9 @@ PagesController	/home/bfulk/rails_projects/gPanda/app/controllers/pages_controll
 PagesControllerTest	/home/bfulk/rails_projects/gPanda/test/functional/pages_controller_test.rb	class PagesControllerTest 
 PagesHelper	/home/bfulk/rails_projects/gPanda/app/helpers/pages_helper.rb	module PagesHelper
 PagesHelperTest	/home/bfulk/rails_projects/gPanda/test/unit/helpers/pages_helper_test.rb	class PagesHelperTest 
+Result	/home/bfulk/rails_projects/gPanda/app/models/result.rb	class Result 
+ResultsController	/home/bfulk/rails_projects/gPanda/app/controllers/results_controller.rb	class ResultsController 
+ResultsHelper	/home/bfulk/rails_projects/gPanda/app/helpers/results_helper.rb	module ResultsHelper
 Str	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function Str(key, holder, stack)
 TestCase	/home/bfulk/rails_projects/gPanda/test/test_helper.rb	class ActiveSupport::TestCase
 Type	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function Type(o)
@@ -61,6 +65,7 @@ dispatch	/home/bfulk/rails_projects/gPanda/public/javascripts/effects.js	functio
 down	/home/bfulk/rails_projects/gPanda/db/migrate/20110111012457_create_jobs.rb	  def self.down
 down	/home/bfulk/rails_projects/gPanda/db/migrate/20110111025610_add_method_to_jobs.rb	  def self.down
 down	/home/bfulk/rails_projects/gPanda/db/migrate/20110111045127_add_user_id_to_jobs.rb	  def self.down
+down	/home/bfulk/rails_projects/gPanda/db/migrate/20110111215408_create_results.rb	  def self.down
 each	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function each(iterator)
 each	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -172,6 +177,7 @@ select	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	functio
 select	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function select(selector, scope)
 set	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function set(key, value)
 show	/home/bfulk/rails_projects/gPanda/app/controllers/jobs_controller.rb	  def show
+show	/home/bfulk/rails_projects/gPanda/app/controllers/results_controller.rb	  def show
 size	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function size()
 size	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function size()
 sortBy	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function sortBy(iterator, context)
@@ -215,6 +221,7 @@ unset	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function
 up	/home/bfulk/rails_projects/gPanda/db/migrate/20110111012457_create_jobs.rb	  def self.up
 up	/home/bfulk/rails_projects/gPanda/db/migrate/20110111025610_add_method_to_jobs.rb	  def self.up
 up	/home/bfulk/rails_projects/gPanda/db/migrate/20110111045127_add_user_id_to_jobs.rb	  def self.up
+up	/home/bfulk/rails_projects/gPanda/db/migrate/20110111215408_create_results.rb	  def self.up
 update	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function update(array, args)
 update	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function update(element, content)
 update	/home/bfulk/rails_projects/gPanda/public/javascripts/prototype.js	function update(object)

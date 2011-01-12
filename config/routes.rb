@@ -1,5 +1,9 @@
 Gpanda::Application.routes.draw do
+  get "results/show"
+
   resources :jobs
+  
+  resources :results
   
   match '/submit', :to => 'jobs#new'    
   
