@@ -111,3 +111,26 @@ a.signup_button {
   -webkit-border-radius: 10px;
   border-radius:         10px;
 }
+
+/* Job show page */
+table.job {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+}
+
+
+
+
+

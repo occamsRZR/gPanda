@@ -9,6 +9,7 @@ class JobsController < ApplicationController
   def show
     @job = Job.find(params[:id])
     @title = @job.name
+    @results = @job.results
   end
 
 end

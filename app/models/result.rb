@@ -15,6 +15,8 @@
 class Result < ActiveRecord::Base
   attr_accessible :gi, :score, :job_id, :analysis_id
   
+  belongs_to :job
+  
   validates :gi,          :presence => true,
                           :length   => { :maximum => 20 }
   validates :score,       :presence => true,

@@ -17,6 +17,8 @@ class Job < ActiveRecord::Base
 #  belongs_to :user
   attr_accessible :name, :public, :user_id, :genome, :method, :created_at
   
+  has_many :results, :dependent => :destroy
+  
   validates :name, :presence => true,
                    :length   => { :maximum => 75 }
   validates :genome, :presence => true 
