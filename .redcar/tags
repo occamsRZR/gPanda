@@ -1,4 +1,4 @@
-1294875182
+1294961770
 AddEmailUniquenessIndex	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110107232127_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 AddLengthToResults	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110112214339_add_length_to_results.rb	class AddLengthToResults 
 AddPasswordToUsers	/Users/bfulk/dir1/rails_projects/gpanda/db/migrate/20110108010746_add_password_to_users.rb	class AddPasswordToUsers 
@@ -54,6 +54,7 @@ compact	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	
 concat	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function concat()
 contact	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/pages_controller.rb	  def contact
 copy	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
+create	/Users/bfulk/dir1/rails_projects/gpanda/app/controllers/users_controller.rb	  def create
 create	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function create()
 cssNameFor	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function cssNameFor(key)
 cumulativeOffset	/Users/bfulk/dir1/rails_projects/gpanda/public/javascripts/prototype.js	function cumulativeOffset(element)
