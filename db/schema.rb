@@ -14,21 +14,33 @@ ActiveRecord::Schema.define(:version => 20110111215408) do
 
   create_table "jobs", :force => true do |t|
     t.string   "name"
-    t.binary   "public"
+    t.boolean  "public"
     t.string   "genome"
+    t.string   "method"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "method"
     t.integer  "user_id"
   end
 
   create_table "results", :force => true do |t|
     t.string   "gi"
     t.string   "score"
+    t.integer  "length"
     t.integer  "job_id"
     t.integer  "analysis_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "encrypted_password"
+    t.string   "salt"
+  end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
 
 end

@@ -3,6 +3,7 @@ class CreateResults < ActiveRecord::Migration
     create_table :results do |t|
       t.string :gi
       t.string :score
+      t.integer :length
       t.integer :job_id
       t.integer :analysis_id
 

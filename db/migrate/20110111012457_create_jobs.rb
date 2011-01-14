@@ -2,7 +2,7 @@ class CreateJobs < ActiveRecord::Migration
   def self.up
     create_table :jobs do |t|
       t.string :name
-      t.binary :public
+      t.boolean :public
       t.string :genome
       t.string :method
 
