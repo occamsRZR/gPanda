@@ -1,7 +1,7 @@
 module ApplicationHelper
 
     def logo
-        logo = image_tag("panda.jpg", :alt => "Punk Pandas", :class => "round") 
+        image_tag("gpanda.png", :alt => "gpanda", :class => "round") 
     end
     
     def title

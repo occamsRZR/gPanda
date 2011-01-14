@@ -1,6 +1,6 @@
 Gpanda::Application.routes.draw do
-  resources :sessions, :only => [:new, :create, :destroy]
   resources :users  
+  resources :sessions, :only => [:new, :create, :destroy]
   resources :jobs
   resources :results
 

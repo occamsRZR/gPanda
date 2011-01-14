@@ -3,15 +3,6 @@ require 'spec_helper'
 describe SessionsController do
   render_views
   
-  describe "DELETE 'destroy'" do    
-    it "should sign a user out" do
-      test_sign_in(Factory(:user))
-      delete :destroy
-      controller.should_not be_signed_in
-      response.should redirect_to(root_path)
-    end
-  end
-  
   describe "GET 'new'" do
     it "should be successful" do
       get :new
@@ -66,5 +57,15 @@ describe SessionsController do
         response.should redirect_to(user_path(@user))
       end
     end    
+  end
+  
+  describe "DELETE 'destroy'" do    
+    
+    it "should sign a user out" do
+      test_sign_in(Factory(:user))
+      delete :destroy
+      controller.should_not be_signed_in
+      response.should redirect_to(root_path)
+    end
   end
 end
