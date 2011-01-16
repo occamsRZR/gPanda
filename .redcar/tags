@@ -1,4 +1,4 @@
-1295154126
+1295158211
 AddAdminToUsers	/home/bfulk/rails_projects/master2/db/migrate/20110116005324_add_admin_to_users.rb	class AddAdminToUsers 
 AddEmailUniquenessIndex	/home/bfulk/rails_projects/master2/db/migrate/20110107232127_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 AddPasswordToUsers	/home/bfulk/rails_projects/master2/db/migrate/20110108010746_add_password_to_users.rb	class AddPasswordToUsers 

@@ -24,4 +24,5 @@ class Result < ActiveRecord::Base
   validates :job_id,      :presence => true
   validates :analysis_id, :presence => true
   
+  default_scope :order => 'results.score DESC'
 end

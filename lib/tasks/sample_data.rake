@@ -21,7 +21,13 @@ namespace :db do
     end
     User.all(:limit => 6).each do |user|
       50.times do
-        user.jobs.create!(:method => "svm", :name => Faker::Lorem.sentence(1), :public => "true", :genome => "A. thaliana") 
+        job = user.jobs.create!(:method => "svm", :name => Faker::Lorem.sentence(1), :public => "true", :genome => "A. thaliana") 
+        50.times do
+          gi = rand(30000).to_s(16)
+          score = rand.round(8).to_s
+          analysis_id = rand(200)
+          job.results.create!(:gi => gi, :score => score, :analysis_id => analysis_id)
+        end
       end
     end
   end
