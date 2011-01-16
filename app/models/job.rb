@@ -15,10 +15,12 @@
 
 class Job < ActiveRecord::Base
   
-  attr_accessible :name, :public, :user_id, :genome, :method, :created_at
+  attr_accessible :name, :public, :genome, :method
   
   belongs_to :user
   has_many :results, :dependent => :destroy
+  
+  default_scope :order => 'jobs.created_at DESC'
   
   validates :name, :presence => true,
                    :length   => { :maximum => 75 }

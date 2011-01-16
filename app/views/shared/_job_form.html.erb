@@ -1,0 +1,22 @@
+<%= form_for @job do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :method %><br />
+    <%= f.text_field :method %>
+  </div>
+  <div class="field">
+    <%= f.label :genome %><br />
+    <%= f.text_field :genome %>
+  </div>
+  <div class="field">
+    <%= f.label :public %><br />
+    <%= f.text_field :public %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>

@@ -30,6 +30,13 @@
       <strong>Genome:</strong> <i><%= @job.genome %> </i><br />
       <strong>Public?</strong> <%= @job.public %> <br />
       <strong>URL:</strong> <%= link_to job_path(@job), @job%> <br />
+    <% if current_user?(@job.user) %>
+      <strong>
+      <%= link_to "delete job?", @job,       :method => :delete,
+                                       :confirm => "You sure?",
+                                       :title => @job.name %>
+      </strong>
+    <% end %>
     </td>
   </tr>
 </table>

@@ -1,10 +1,10 @@
 Gpanda::Application.routes.draw do
   resources :users  
   resources :sessions, :only => [:new, :create, :destroy]
-  resources :jobs
+  resources :jobs, :only => [:create, :destroy, :show]
   resources :results
 
-  match '/submit', :to => 'jobs#new'    
+  #match '/submit', :to => 'jobs#create'    
   match '/signup', :to => 'users#new'
   match '/signin', :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
@@ -12,8 +12,6 @@ Gpanda::Application.routes.draw do
   match '/about', :to => 'pages#about'
   match '/demo', :to => 'pages#demo'
   match '/help', :to => 'pages#help'
-  match '/user', :to => 'pages#user'
-  match '/job', :to => 'pages#job'
   match '/news', :to => 'pages#news'
   match '/jobs', :to => 'jobs#index'
 

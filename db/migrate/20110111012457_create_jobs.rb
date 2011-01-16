@@ -5,9 +5,11 @@ class CreateJobs < ActiveRecord::Migration
       t.boolean :public
       t.string :genome
       t.string :method
+      t.integer :user_id
 
       t.timestamps
     end
+    add_index :jobs, :user_id
   end
 
   def self.down

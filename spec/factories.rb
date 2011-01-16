@@ -1,5 +1,5 @@
 Factory.define :result do |r|
-  r.gi          "gi|BAD14874.1"
+  r.gi          "BAD14874.1"
   r.score       "0.984722"
   r.job_id      "1"
   r.analysis_id "12"
@@ -10,7 +10,7 @@ Factory.define :job do |j|
   #j.method      'svm'
   j.public      "true"
   j.genome      "Arabidopsis thaliana"
-  j.user_id     "1"
+  j.association :user
 end
   
 Factory.define :user do |u|

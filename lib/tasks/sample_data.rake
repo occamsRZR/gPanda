@@ -17,6 +17,12 @@ namespace :db do
                    :email => email,
                    :password => password,
                    :password_confirmation => password)
+                  
+    end
+    User.all(:limit => 6).each do |user|
+      50.times do
+        user.jobs.create!(:method => "svm", :name => Faker::Lorem.sentence(1), :public => "true", :genome => "A. thaliana") 
+      end
     end
   end
 end

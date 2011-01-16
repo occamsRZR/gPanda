@@ -1,9 +1,8 @@
-1295140457
+1295154126
 AddAdminToUsers	/home/bfulk/rails_projects/master2/db/migrate/20110116005324_add_admin_to_users.rb	class AddAdminToUsers 
 AddEmailUniquenessIndex	/home/bfulk/rails_projects/master2/db/migrate/20110107232127_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 AddPasswordToUsers	/home/bfulk/rails_projects/master2/db/migrate/20110108010746_add_password_to_users.rb	class AddPasswordToUsers 
 AddSaltToUsers	/home/bfulk/rails_projects/master2/db/migrate/20110108020818_add_salt_to_users.rb	class AddSaltToUsers 
-AddUserIdToJobs	/home/bfulk/rails_projects/master2/db/migrate/20110111045127_add_user_id_to_jobs.rb	class AddUserIdToJobs 
 Application	/home/bfulk/rails_projects/master2/config/application.rb	  class Application 
 ApplicationController	/home/bfulk/rails_projects/master2/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/bfulk/rails_projects/master2/app/helpers/application_helper.rb	module ApplicationHelper
@@ -39,9 +38,10 @@ admin_user	/home/bfulk/rails_projects/master2/app/controllers/users_controller.r
 all	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function all(iterator, context)
 any	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function any(iterator, context)
 argumentNames	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function argumentNames()
-authenticate	/home/bfulk/rails_projects/master2/app/controllers/users_controller.rb	    def authenticate
+authenticate	/home/bfulk/rails_projects/master2/app/helpers/sessions_helper.rb	  def authenticate
 authenticate	/home/bfulk/rails_projects/master2/app/models/user.rb	  def self.authenticate(email, submitted_password)
 authenticate_with_salt	/home/bfulk/rails_projects/master2/app/models/user.rb	  def self.authenticate_with_salt(id, cookie_salt)
+authorized_user	/home/bfulk/rails_projects/master2/app/controllers/jobs_controller.rb	    def authorized_user
 bind	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function bind(context)
 bindAsEventListener	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function bindAsEventListener(context)
 blank	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function blank()
@@ -61,6 +61,7 @@ concat	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	functi
 contact	/home/bfulk/rails_projects/master2/app/controllers/pages_controller.rb	  def contact
 copy	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
 correct_user	/home/bfulk/rails_projects/master2/app/controllers/users_controller.rb	    def correct_user
+create	/home/bfulk/rails_projects/master2/app/controllers/jobs_controller.rb	  def create
 create	/home/bfulk/rails_projects/master2/app/controllers/sessions_controller.rb	  def create
 create	/home/bfulk/rails_projects/master2/app/controllers/users_controller.rb	  def create
 create	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function create()
@@ -77,6 +78,7 @@ define	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	functi
 delay	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function delay(timeout)
 demo	/home/bfulk/rails_projects/master2/app/controllers/pages_controller.rb	  def demo
 deny_access	/home/bfulk/rails_projects/master2/app/helpers/sessions_helper.rb	  def deny_access
+destroy	/home/bfulk/rails_projects/master2/app/controllers/jobs_controller.rb	  def destroy
 destroy	/home/bfulk/rails_projects/master2/app/controllers/sessions_controller.rb	  def destroy
 destroy	/home/bfulk/rails_projects/master2/app/controllers/users_controller.rb	  def destroy
 detect	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function detect(iterator, context)
@@ -88,7 +90,6 @@ down	/home/bfulk/rails_projects/master2/db/migrate/20110107232127_add_email_uniq
 down	/home/bfulk/rails_projects/master2/db/migrate/20110108010746_add_password_to_users.rb	  def self.down
 down	/home/bfulk/rails_projects/master2/db/migrate/20110108020818_add_salt_to_users.rb	  def self.down
 down	/home/bfulk/rails_projects/master2/db/migrate/20110111012457_create_jobs.rb	  def self.down
-down	/home/bfulk/rails_projects/master2/db/migrate/20110111045127_add_user_id_to_jobs.rb	  def self.down
 down	/home/bfulk/rails_projects/master2/db/migrate/20110111215408_create_results.rb	  def self.down
 down	/home/bfulk/rails_projects/master2/db/migrate/20110116005324_add_admin_to_users.rb	  def self.down
 each	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function each(iterator)
@@ -185,7 +186,6 @@ merge	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	functio
 merge	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function merge(object)
 methodize	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function methodize()
 min	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function min(iterator, context)
-new	/home/bfulk/rails_projects/master2/app/controllers/jobs_controller.rb	  def new
 new	/home/bfulk/rails_projects/master2/app/controllers/sessions_controller.rb	  def new
 new	/home/bfulk/rails_projects/master2/app/controllers/users_controller.rb	  def new
 news	/home/bfulk/rails_projects/master2/app/controllers/pages_controller.rb	  def news
@@ -267,7 +267,6 @@ up	/home/bfulk/rails_projects/master2/db/migrate/20110107232127_add_email_unique
 up	/home/bfulk/rails_projects/master2/db/migrate/20110108010746_add_password_to_users.rb	  def self.up
 up	/home/bfulk/rails_projects/master2/db/migrate/20110108020818_add_salt_to_users.rb	  def self.up
 up	/home/bfulk/rails_projects/master2/db/migrate/20110111012457_create_jobs.rb	  def self.up
-up	/home/bfulk/rails_projects/master2/db/migrate/20110111045127_add_user_id_to_jobs.rb	  def self.up
 up	/home/bfulk/rails_projects/master2/db/migrate/20110111215408_create_results.rb	  def self.up
 up	/home/bfulk/rails_projects/master2/db/migrate/20110116005324_add_admin_to_users.rb	  def self.up
 update	/home/bfulk/rails_projects/master2/app/controllers/users_controller.rb	  def update

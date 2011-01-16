@@ -2,21 +2,35 @@ require 'spec_helper'
 
 describe Job do
   before(:each) do
+    @user = Factory(:user)
     @attr = {
       :name => "gProteins Alpha SVM",
       :public => "true",
       :genome => "A. thaliana v1.0",
       :method => "SVM",
-      :created_at => "TODAY, DUMMY",
       :user_id => 1
     }  
   end
   
   it "should create a new instance given valid attributes" do
-    Job.create!(@attr)
+    @user.jobs.create!(@attr)
   end
   
-  it "should have a user_id associated with it" 
+  describe "user associations" do
+    
+    before(:each) do
+      @job = @user.jobs.create(@attr)
+    end
+    
+    it "should have a user attribute" do
+      @job.should respond_to(:user)
+    end
+    
+    it "should have the right associated user" do
+      @job.user_id.should == @user.id
+      @job.user.should == @user
+    end
+  end
   
   describe "name validations" do
     

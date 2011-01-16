@@ -1,0 +1,14 @@
+<tr>
+  <td class="job">
+  <span class="name"><%= link_to job.name, job_path(job) %></span>
+    <span class="timestamp">
+      Submitted <%= time_ago_in_words(job.created_at) %> ago.
+    </span>
+  </td>
+  <td class="job">  
+    <span class="method"><%= job.method%></span>
+  </td>
+  <td class="job">  
+    <span class="results"><%= job.results.count%></span>
+  </td>
+</tr>

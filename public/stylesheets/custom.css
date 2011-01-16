@@ -1,5 +1,5 @@
 .container {
-  width: 710px;
+  width: 757px;
 }
 
 body {
@@ -188,4 +188,60 @@ ul.users {
   list-style: none;
 }
 
+/* If there are some formating issuses, try altering this job section*/
+
+h1.jobs {
+  margin-bottom: 0.3em;
+}
+
+table.jobs {
+  margin-top: 1em;
+}
+
+table.jobs tr {
+  height: 70px;
+}
+
+table.jobs tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.jobs tr td.job {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.jobs tr td.job span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.jobs {
+  font-size: 80%;
+}
+
+form.new_job {
+  margin-bottom: 2em;
+}
+
+form.new_job textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
 

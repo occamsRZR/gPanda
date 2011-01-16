@@ -76,6 +76,14 @@ describe UsersController do
       get :show, :id => @user
       response.should have_selector("h1>img", :class => "gravatar")
     end
+    
+    it "should show the user's jobs" do
+      j1 = Factory(:job, :user => @user, :method => "Foo bar")
+      j1 = Factory(:job, :user => @user, :method => "hmm")
+      get :show, :id => @user
+      response.should have_selector("span.method", :method => j1.method)
+      response.should have_selector("span.method", :method => j2.method)
+    end
   end
 
   describe "GET 'new'" do

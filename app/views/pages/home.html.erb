@@ -1,6 +1,21 @@
-<h1>gPanda</h1>
+<% if signed_in? %>
+  <table class="front" summary="For signed-in users">
+    <tr>
+      <td class="main">
+        <h1 class="job">New job?</h1>
+        <%= render 'shared/job_form' %>
+      </td>
+      <td class="sidebar round">
+        <%= render 'shared/user_info' %>
+      </td>
+    </tr>
+  </table>
+<% else %>
+
+<h1>Hello!</h1>
 <p>
-Hello and welcome to gPanda.
+... and welcome to gpanda.
 </p>
 
 <%= link_to "Sign up!", signup_path, :class => "signup_button round" %>
+<% end %>

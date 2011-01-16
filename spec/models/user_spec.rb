@@ -133,4 +133,28 @@ describe User do
       @user.should be_admin
     end
   end  
+  
+  describe "micropost associations" do
+
+    before(:each) do
+      @user = User.create(@attr)
+      @j1 = Factory(:job, :user => @user, :created_at => 1.day.ago, :method => "svm")
+      @j2 = Factory(:job, :user => @user, :created_at => 1.hour.ago, :method => "hmm")
+    end
+
+    it "should have a jobs attribute" do
+      @user.should respond_to(:jobs)
+    end
+    
+    it "should have the right jobs in the right order" do
+      @user.jobs.should == [@j2, @j1]
+    end
+    
+    it "should destroy associated jobs" do
+      @user.destroy
+      [@j1, @j2].each do |job|
+        Job.find_by_id(job.id).should be_nil
+      end
+    end
+  end
 end

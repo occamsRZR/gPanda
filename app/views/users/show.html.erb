@@ -5,30 +5,23 @@
       <%= gravatar_for @user %>
       <%= @user.name%>
       </h1>
-      <table class="profile">
-        <td>
-          <strong>Job Name</strong>
-        </td>
-        <td>
-          <strong>Method</strong>
-        </td>
-        <td>
-          <strong>Results</strong>
-        </td>
-        <% @jobs.each do |job|  %>
-          <tr>
-            <td>
-              <%= link_to job.name, job %>
-            </td>
-            <td>
-              <%= job.method %>
-            </td>
-            <td>
-              <%= job.results.count %>
-            </td>
-          <tr>
-        <% end %>
-      </table>
+      <% unless @user.jobs.empty? %>
+        <table class="jobs">
+          <td>
+            <strong>Job Name</strong>
+          </td>
+          <td>
+            <strong>Method</strong>
+          </td>
+          <td>
+            <strong>Results</strong>
+          </td>
+          <%= render @jobs %>
+          <%= will_paginate @jobs %>
+        </table>
+          <%= will_paginate @jobs %>
+      <% end %>
+        
     </td>
     <td class="sidebar round">
       <strong>Email:</strong> <%= @user.email %> <br />

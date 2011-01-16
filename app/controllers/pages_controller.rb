@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
     @title = "Home"
+    @job = Job.new if signed_in?
   end
 
   def about
