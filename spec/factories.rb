@@ -14,8 +14,12 @@ Factory.define :job do |j|
 end
   
 Factory.define :user do |u|
-  u.name                    "Michael Hartl"
-  u.email                   "mhart1@example.com"
+  u.name                    "New Name"
+  u.email                   "user@example.org"
   u.password                "foobar"
   u.password_confirmation   "foobar"
 end  
+
+Factory.sequence :email do |n|
+  "person-#{n}@example.com"
+end
