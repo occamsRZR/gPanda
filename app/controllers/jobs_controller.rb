@@ -18,7 +18,7 @@ class JobsController < ApplicationController
   def show
     @job = Job.find(params[:id])
     @title = @job.name
-    @results = @job.results
+    @results = @job.results.paginate(:page => params[:page])
   end
 
   def destroy

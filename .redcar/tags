@@ -1,4 +1,4 @@
-1295158211
+1295234659
 AddAdminToUsers	/home/bfulk/rails_projects/master2/db/migrate/20110116005324_add_admin_to_users.rb	class AddAdminToUsers 
 AddEmailUniquenessIndex	/home/bfulk/rails_projects/master2/db/migrate/20110107232127_add_email_uniqueness_index.rb	class AddEmailUniquenessIndex 
 AddPasswordToUsers	/home/bfulk/rails_projects/master2/db/migrate/20110108010746_add_password_to_users.rb	class AddPasswordToUsers 
@@ -6,11 +6,17 @@ AddSaltToUsers	/home/bfulk/rails_projects/master2/db/migrate/20110108020818_add_
 Application	/home/bfulk/rails_projects/master2/config/application.rb	  class Application 
 ApplicationController	/home/bfulk/rails_projects/master2/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/bfulk/rails_projects/master2/app/helpers/application_helper.rb	module ApplicationHelper
+BiorubyController	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	class BiorubyController 
+BiorubyGenerator	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/bioruby_generator.rb	class BiorubyGenerator 
+BiorubyHelper	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_helper.rb	module BiorubyHelper
 BrowsingTest	/home/bfulk/rails_projects/master2/test/performance/browsing_test.rb	class BrowsingTest 
 CreateJobs	/home/bfulk/rails_projects/master2/db/migrate/20110111012457_create_jobs.rb	class CreateJobs 
 CreateResults	/home/bfulk/rails_projects/master2/db/migrate/20110111215408_create_results.rb	class CreateResults 
 CreateUsers	/home/bfulk/rails_projects/master2/db/migrate/20110107024349_create_users.rb	class CreateUsers 
 Gpanda	/home/bfulk/rails_projects/master2/config/application.rb	module Gpanda
+HIDE_METHODS	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  HIDE_METHODS =
+HIDE_MODULES	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  HIDE_MODULES =
+HIDE_VARIABLES	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  HIDE_VARIABLES =
 Job	/home/bfulk/rails_projects/master2/app/models/job.rb	class Job 
 JobsController	/home/bfulk/rails_projects/master2/app/controllers/jobs_controller.rb	class JobsController 
 JobsHelper	/home/bfulk/rails_projects/master2/app/helpers/jobs_helper.rb	module JobsHelper
@@ -21,6 +27,7 @@ PagesHelperTest	/home/bfulk/rails_projects/master2/test/unit/helpers/pages_helpe
 Result	/home/bfulk/rails_projects/master2/app/models/result.rb	class Result 
 ResultsController	/home/bfulk/rails_projects/master2/app/controllers/results_controller.rb	class ResultsController 
 ResultsHelper	/home/bfulk/rails_projects/master2/app/helpers/results_helper.rb	module ResultsHelper
+SECURITY_NOTICE	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  SECURITY_NOTICE =
 SessionsController	/home/bfulk/rails_projects/master2/app/controllers/sessions_controller.rb	class SessionsController 
 SessionsHelper	/home/bfulk/rails_projects/master2/app/helpers/sessions_helper.rb	module SessionsHelper
 Str	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function Str(key, holder, stack)
@@ -56,6 +63,7 @@ clone	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	functio
 clone	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function clone()
 clone	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function clone(object)
 collect	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function collect(iterator, context)
+commands	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  def commands
 compact	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function compact()
 concat	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function concat()
 contact	/home/bfulk/rails_projects/master2/app/controllers/pages_controller.rb	  def contact
@@ -104,6 +112,7 @@ endsWith	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	func
 escapeHTML	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function escapeHTML()
 evalJSON	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function evalJSON(sanitize)
 evalScripts	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function evalScripts()
+evaluate	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  def evaluate
 extend	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function extend(destination, source)
 extend	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function extend(tagName)
 extendElementWith	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function extendElementWith(element, methods)
@@ -131,7 +140,9 @@ gsub	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function
 handleMethod	/home/bfulk/rails_projects/master2/public/javascripts/rails.js	function handleMethod(element)
 handleRemote	/home/bfulk/rails_projects/master2/public/javascripts/rails.js	function handleRemote(element)
 has_password?	/home/bfulk/rails_projects/master2/app/models/user.rb	  def has_password?(submitted_password)
+have_results	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_helper.rb	  def have_results
 help	/home/bfulk/rails_projects/master2/app/controllers/pages_controller.rb	  def help
+history	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  def history
 home	/home/bfulk/rails_projects/master2/app/controllers/pages_controller.rb	  def home
 inGroupsOf	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function inGroupsOf(number, fillWith)
 include	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function include(object)
@@ -139,6 +150,7 @@ include	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	funct
 include	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function include(value)
 index	/home/bfulk/rails_projects/master2/app/controllers/jobs_controller.rb	  def index
 index	/home/bfulk/rails_projects/master2/app/controllers/users_controller.rb	  def index
+index	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  def index
 index	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function index(value)
 indexOf	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function indexOf(item, i)
 initialize	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function initialize(object)
@@ -176,8 +188,13 @@ keys	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function
 klass	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function klass()
 last	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function last()
 lastIndexOf	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function lastIndexOf(item, i)
+list_classes	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  def list_classes
+list_methods	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  def list_methods
+list_modules	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  def list_modules
+local_variables	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_helper.rb	  def local_variables
 logo	/home/bfulk/rails_projects/master2/app/helpers/application_helper.rb	    def logo
 make_salt	/home/bfulk/rails_projects/master2/app/models/user.rb	    def make_salt
+manifest	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/bioruby_generator.rb	  def manifest
 match	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function match()
 match	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function match(element, selector)
 max	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function max(iterator, context)
@@ -202,11 +219,16 @@ pointerY	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	func
 pollDoScroll	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function pollDoScroll()
 positionedOffset	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function positionedOffset(element)
 prepareReplacement	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function prepareReplacement(replacement)
+project_workdir	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_helper.rb	  def project_workdir
 purgeElement	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function purgeElement(element)
 redirect_back_or	/home/bfulk/rails_projects/master2/app/helpers/sessions_helper.rb	  def redirect_back_or(default)
+reference_link	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_helper.rb	  def reference_link(class_or_module)
 reject	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function reject(iterator, context)
 relativize	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function relativize(element)
+reload_script	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  def reload_script
 remember_token	/home/bfulk/rails_projects/master2/app/helpers/sessions_helper.rb	    def remember_token
+render_log	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_helper.rb	  def render_log(page)
+results	/home/bfulk/rails_projects/master2/gpanda/vendor/plugins/bioruby/generators/bioruby/templates/bioruby_controller.rb	  def results
 reverse	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function reverse(inline)
 round	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function round()
 scan	/home/bfulk/rails_projects/master2/public/javascripts/prototype.js	function scan(pattern, iterator)

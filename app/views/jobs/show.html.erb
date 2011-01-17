@@ -4,24 +4,25 @@
       <h1>
       Results:
       </h1>
-      <table class="results">
-        <td>
-          <strong>gi</strong>
-        </td>
-        <td>
-          <strong>score</strong>
-        </td>
-        <% @results.each do |result|  %>
-          <tr>
-            <td>
-              <%= link_to result.gi, result %>
-            </td>
-            <td>
-              <%= result.score %>
-            </td>
-          <tr>
-        <% end %>
-      </table>
+            
+      <% unless @job.results.empty? %>
+        <table class="results">
+          <td>
+            <strong>Accession</strong>
+          </td>
+          <td>
+            <strong>Score</strong>
+          </td>
+          <td>
+            <strong>Length</strong>
+          </td>
+          <%= render @results %>
+          <%= will_paginate @results %>
+        </table>
+          <%= will_paginate @results %>
+      <% end %>
+
+
     </td>
     <td class="sidebar round">
       <strong>Name:</strong> <%= @job.name %> <br />
