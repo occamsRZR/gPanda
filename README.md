@@ -36,7 +36,11 @@ You will then be able to view the site at [http://localhost:3000](http://localho
 Hold up, WTF is up with the name?
 ------------------------------------------------
 
-Fantastic question.  The name has little meaning aside from it referring to a cute animal native to China.  During much of my research, I would submit jobs to [TORQUE's](http://en.wikipedia.org/wiki/TORQUE_Resource_Manager) queue.  I would have to come up with ways to describe which batch files were which.  Long story short: to me, gPanda means __g__ __p__roteins __and__ __a__ll.   
+Fantastic question.  The name has little meaning aside from it referring to a cute animal native to China.  During much of my research, I would submit jobs to [TORQUE's](http://en.wikipedia.org/wiki/TORQUE_Resource_Manager) queue.  I would have to come up with ways to describe which batch files were which.  Long story short: to me, gPanda means __G__ __P__roteins __AND__ __A__ll.  
+
+A simple google search also shows there are very few results for "gpanda" so this is just good SEO, IMHO. 
+
+(whoops: there seems to be a sourceforge project named GPanda.  It's a GUI engine for linux yet has no files in the project.  Luckily, it is a GPL project)
 
 Objective
 ------------------------------------------------
@@ -62,4 +66,14 @@ Contributing
 ------------------------------------------------
 
 You can contribute to this project by [forking](https://github.com/guides/fork-a-project-and-submit-your-modifications) it.
+
+At the moment, the focus has been on using support vector machines ([SVM](http://en.wikipedia.org/wiki/Support_vector_machine)). Although the following are soon to be added:
+
+*   HMMer (hiddgen markov model program)
+*   MEME (motif finder)
+*   BLAST (basic local alignment search tool)
+*   MAFFT (multiple sequence alignment)
+*   PhyML (phylogeny program using maximum-likelihood)
+*   BioRuby (Ruby modules for bioinformatics)
+*   [jsPhyloSVG](http://www.jsphylosvg.com/) (a javascript library to create interactive phylogenetic trees)
 
