@@ -63,7 +63,7 @@ nav {
 nav {
   background-color: white;
   padding: 0 0.7em;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 nav ul {

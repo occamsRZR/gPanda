@@ -17,10 +17,12 @@ ActiveRecord::Schema.define(:version => 20110116005324) do
     t.boolean  "public"
     t.string   "genome"
     t.string   "method"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
   end
+
+  add_index "jobs", ["user_id"], :name => "index_jobs_on_user_id"
 
   create_table "results", :force => true do |t|
     t.string   "gi"

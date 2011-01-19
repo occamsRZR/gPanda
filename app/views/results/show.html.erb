@@ -1,6 +1,12 @@
 <h1>
-<%= @result.gi %>
+Result: <%= @result.gi %>
 </h1>
 <p>
+<% gbobj = Bio::GenBank.new(@server.fetch('genbank', @result.gi )) %>
+Definition: <%= gbobj.definition %> <br />
+Length: <%= gbobj.seq.length %> aa<br />
+Sequence: <% seq = gbobj.seq %>
+<%= word_wrap(seq, :line_width => 100) %>
 
+  <br />
 </p>
