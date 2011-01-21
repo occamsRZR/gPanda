@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a658c0d-e392-4b51-91ea-850448434fa9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gPanda.iws" />
@@ -28,10 +27,28 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="19" selection-start="67" selection-end="67" vertical-scroll-proportion="-2.2222223">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database_example.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database_example.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="20" selection-start="465" selection-end="465" vertical-scroll-proportion="0.15609756">
               <folding />
             </state>
           </provider>
@@ -78,6 +95,8 @@
         <option value="$PROJECT_DIR$/app/views/results/show.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/custom.css" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/database_example.yml" />
       </list>
     </option>
   </component>
@@ -107,7 +126,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -127,9 +145,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gPanda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gPanda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -408,42 +441,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/results/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="39" selection-end="39" vertical-scroll-proportion="0.03560831">
-          <folding />
-        </state>
+        <state line="3" column="2" selection-start="39" selection-end="39" vertical-scroll-proportion="0.03560831" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/results/_result.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="5" selection-start="278" selection-end="278" vertical-scroll-proportion="0.11639185">
-          <folding />
-        </state>
+        <state line="10" column="5" selection-start="278" selection-end="278" vertical-scroll-proportion="0.11639185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="16" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0114068445">
-          <folding />
-        </state>
+        <state line="56" column="16" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0114068445" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/results_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="126" selection-end="126" vertical-scroll-proportion="0.03422053">
-          <folding />
-        </state>
+        <state line="3" column="28" selection-start="126" selection-end="126" vertical-scroll-proportion="0.03422053" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/jobs/_job.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="7" selection-end="7" vertical-scroll-proportion="0.011639185">
-          <folding />
-        </state>
+        <state line="1" column="2" selection-start="7" selection-end="7" vertical-scroll-proportion="0.011639185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="67" selection-end="67" vertical-scroll-proportion="-2.2222223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database_example.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="465" selection-end="465" vertical-scroll-proportion="0.15609756">
           <folding />
         </state>
       </provider>

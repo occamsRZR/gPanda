@@ -71,6 +71,14 @@ describe JobsController do
         post :create, :job => @attr
         flash[:success].should =~ /job submitted/i
       end
+      
+      describe "qsub queueing" do
+        
+        it "should produce a string to be passed into qsub"
+        
+        it "should list this job as 'pending' until it is finished"
+      
+      end        
     end
   end
   

@@ -1,11 +1,12 @@
 # == Schema Information
-# Schema version: 20110111215408
+# Schema version: 20110116005324
 #
 # Table name: results
 #
 #  id          :integer         not null, primary key
 #  gi          :string(255)
 #  score       :string(255)
+#  length      :integer
 #  job_id      :integer
 #  analysis_id :integer
 #  created_at  :datetime

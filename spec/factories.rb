@@ -23,3 +23,8 @@ end
 Factory.sequence :email do |n|
   "person-#{n}@example.com"
 end
+
+Factory.define :program do |p|
+  p.name      "SVM"
+  p.location  "/sw/bin/svm-train"
+end

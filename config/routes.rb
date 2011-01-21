@@ -1,4 +1,10 @@
 Gpanda::Application.routes.draw do
+  get "programs/show"
+
+  get "programs/create"
+
+  get "programs/destroy"
+
   resources :users  
   resources :sessions, :only => [:new, :create, :destroy]
   resources :jobs, :only => [:create, :destroy, :show]

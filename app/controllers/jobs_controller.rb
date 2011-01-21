@@ -10,6 +10,9 @@ class JobsController < ApplicationController
     if @job.save
       flash[:success] = "Job submitted!"
       redirect_to root_path
+      # It would be best just to be able to pass a string into this 
+      # system method in order to submit a job
+      system("bfulk@ssh './quick_script'")
     else
       render 'pages/home'
     end
