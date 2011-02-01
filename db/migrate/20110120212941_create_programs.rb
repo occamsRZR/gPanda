@@ -9,6 +9,7 @@ class CreatePrograms < ActiveRecord::Migration
     end
   end
 
+
   def self.down
     drop_table :programs
   end

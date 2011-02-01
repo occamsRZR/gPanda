@@ -12,6 +12,8 @@
 
 class Program < ActiveRecord::Base
   attr_accessible :name, :location
+
+  has_many :options
   
   # This leaning tower of toothpicks makes sure this is the ABSOLUTE path of the program
   location_regex = /^\/\w+/i

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110120212941) do
+ActiveRecord::Schema.define(:version => 20110201021411) do
 
   create_table "jobs", :force => true do |t|
     t.string   "name"
@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(:version => 20110120212941) do
   end
 
   add_index "jobs", ["user_id"], :name => "index_jobs_on_user_id"
+
+  create_table "options", :force => true do |t|
+    t.string   "option"
+    t.string   "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "programs", :force => true do |t|
     t.string   "name"

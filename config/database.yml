@@ -13,8 +13,8 @@ test:
   adapter: mysql
   encoding: utf8
   database: test
-  username: ########
-  password: ########
+  username: bfulk
+  password: TEc4E3Ud
   host: bioservweb.unl.edu
   pool: 5
   timeout: 5000
