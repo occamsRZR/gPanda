@@ -28,6 +28,12 @@ class JobsController < ApplicationController
     @job.destroy
     redirect_back_or root_path
   end
+
+
+  def update_program_select
+    options = Option.where(:program_id => params[:id], :option => "descriptor").order(:value) unless params[:id].blank?
+    render :partial => "programs", :locals => { :options => options }
+  end
   
   private
     def authorized_user

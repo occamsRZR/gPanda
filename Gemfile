@@ -6,6 +6,8 @@ gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'will_paginate', '3.0.pre2'
 gem 'bio', '1.4.1'
 gem 'remotipart', '0.2.1'
+gem 'jquery-rails'
+gem 'formtastic', '~> 1.1.0'
 
 group :development do
     gem 'rspec-rails', '2.3.0'

@@ -1,0 +1,26 @@
+// javascripts/dynamic_programs.js.erb
+var options = new Array();
+<% for option in @options %>
+  options.push(new Array(<%= option.program_id %>, '<%=h option.option %>', <%= option.id %>));
+<% end %>
+
+function programSelected() {
+  program_id = $('job_program_id').getValue();
+  opt = $('person_state_id').options;
+  opt.length = 1;
+  options.each(function(option) {
+    if (option[0] == program_id) {
+      opt[opt.length] = new Option(option[1], option[2]);
+    }
+  });
+  if (opt.length == 1) {
+    $('option_field').hide();
+  } else {
+    $('option_field').show();
+  }
+}
+
+document.observe('dom:loaded', function() {
+  programSelected();
+  $('job_program_id').observe('change', programSelected);
+});

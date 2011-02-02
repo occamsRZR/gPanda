@@ -10,6 +10,10 @@ Gpanda::Application.routes.draw do
   resources :jobs, :only => [:create, :destroy, :show]
   resources :results
 
+  match 'jobs/update_program_select/:id', :controller => 'jobs', :action => 'update_program_select'
+  match 'jobs/update_subprogram_select/:id', :controller => 'jobs', :action => 'update_subprogram_select'
+
+
   #match '/submit', :to => 'jobs#create'    
   match '/signup', :to => 'users#new'
   match '/signin', :to => 'sessions#new'

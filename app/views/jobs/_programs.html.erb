@@ -1,0 +1,14 @@
+<%= semantic_form_for "job", do |form| %>
+  <%= form.inputs :name => "Advanced" do %>
+    <% if !options.blank? %>
+      <%= form.input :option_id, :collection => options.collect{ |o| [o.value,o.id]} %>
+     <% else %>
+      <%= form.input :option_id, :collection => [] %>
+    <% end %>
+
+  <% end %>
+  <%= form.input :input, :as => :file %>
+    
+<% end %>
+
+

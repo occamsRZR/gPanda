@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(:version => 20110201021411) do
   create_table "options", :force => true do |t|
     t.string   "option"
     t.string   "value"
+    t.string   "program_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -34,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20110201021411) do
   create_table "programs", :force => true do |t|
     t.string   "name"
     t.string   "location"
+    t.string   "language"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -11,7 +11,9 @@
 #
 
 class Program < ActiveRecord::Base
-  attr_accessible :name, :location
+  attr_accessible :name, :location, :id
+
+  belongs_to :job
 
   has_many :options
   

@@ -4,8 +4,10 @@
   <title><%= title %></title> 
   <%= render 'layouts/stylesheets' %>
   <%= csrf_meta_tag %>
+  <%= formtastic_stylesheet_link_tag %>
+
   <%= javascript_include_tag :defaults %>
-  <%= javascript_include_tag 'jquery-1.4.4.min', 'rails', 'jquery.form', 'jquery.remotipart' %>
+  <%= javascript_include_tag 'jquery.min.js', 'rails.js', 'jquery.js', 'application.js' %>
 </head>
 <body>
     <div class="container">

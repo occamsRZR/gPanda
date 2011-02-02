@@ -1,0 +1,25 @@
+svm_descriptor0:
+  option: descriptor
+  value:  Amino Acid
+  program_id: 1
+
+svm_descriptor1:
+  option: descriptor
+  value:  DiPeptide Bonds
+  program_id: 1
+
+
+svm_descriptor2:
+  option: descriptor
+  value:  TriPeptide Bonds
+  program_id: 1
+
+svm_gamma:
+  option: gamma
+  value:  int
+  program_id: 1
+
+svm_tradeoff:
+  option: tradeoff
+  value: int
+  program_id: 1

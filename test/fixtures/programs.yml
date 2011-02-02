@@ -1,0 +1,11 @@
+SVM:
+  name: SVM
+  location: /Users/bfulk/projects/gPanda/lib/svm_proteins/svm.pl
+  language: perl
+  id: 1
+
+HMMer:
+  name: HMMer
+  location: /Users/bfulk/projects/gPanda/lib/hmmer/hmmer.rb
+  language: ruby
+  id: 2
