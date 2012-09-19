@@ -23,7 +23,8 @@ class Result < ActiveRecord::Base
   validates :score,       :presence => true,
                           :length   => { :maximum => 10 }
   validates :job_id,      :presence => true
-  validates :analysis_id, :presence => true
+  ## I'm not totally sure what the analysis_id stuff is...
+  #validates :analysis_id, :presence => true
   
   default_scope :order => 'results.score DESC'
 end

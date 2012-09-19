@@ -19,7 +19,7 @@ class JobsController < ApplicationController
       genome = "TAIR10_pep_20101214"
       sequence = 1
       BlastWorker.perform_async(current_user.id, sequence, @job.id, genome)
-      TestWorker.perform_in(1.minute, @job.id, 300)
+      #TestWorker.perform_in(1.minute, @job.id, 300)
       redirect_to root_path
     else
       flash[:error] = "Your job wasn't submitted."

@@ -1,0 +1,3 @@
+// Place your application-specific JavaScript functions and classes here
+// This file is automatically included by javascript_include_tag :defaults
+$(document).ready(function(e){e("#job_method").live("change",function(){var t=e("select#job_method :selected").val();return t==""?(t="0",e("#jobOptions").hide("slow")):jQuery.get("/jobs/update_program_select/"+t,function(t){e("#jobOptions").html(t).show()}),!1})});

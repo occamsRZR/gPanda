@@ -1,4 +1,5 @@
 Gpanda::Application.routes.draw do
+  mount ApiTaster::Engine => "/api_taster"
 
   # Sidekiq
   require 'sidekiq/web'
@@ -33,7 +34,7 @@ Gpanda::Application.routes.draw do
   root :to => 'pages#home'
  
   if Rails.env.development?
-    mount ApiTaster::Engine => "/api_taster"
+    
     ApiTaster.routes do
 
       get '/programs/show', {}
