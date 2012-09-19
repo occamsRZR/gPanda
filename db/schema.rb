@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -18,8 +19,8 @@ ActiveRecord::Schema.define(:version => 20110201021411) do
     t.string   "genome"
     t.string   "method"
     t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   add_index "jobs", ["user_id"], :name => "index_jobs_on_user_id"
@@ -28,16 +29,16 @@ ActiveRecord::Schema.define(:version => 20110201021411) do
     t.string   "option"
     t.string   "value"
     t.string   "program_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "programs", :force => true do |t|
     t.string   "name"
     t.string   "location"
     t.string   "language"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "results", :force => true do |t|
@@ -46,15 +47,15 @@ ActiveRecord::Schema.define(:version => 20110201021411) do
     t.integer  "length"
     t.integer  "job_id"
     t.integer  "analysis_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
     t.string   "encrypted_password"
     t.string   "salt"
     t.boolean  "admin",              :default => false
