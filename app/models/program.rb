@@ -11,7 +11,7 @@
 #
 
 class Program < ActiveRecord::Base
-  attr_accessible :name, :location, :id
+  attr_accessible :name, :location, :id, :language
 
   belongs_to :job
 

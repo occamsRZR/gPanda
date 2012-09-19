@@ -1,4 +1,9 @@
 Gpanda::Application.routes.draw do
+
+  # Sidekiq
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
+
   get "programs/show"
 
   get "programs/create"
@@ -7,7 +12,7 @@ Gpanda::Application.routes.draw do
 
   resources :users  
   resources :sessions, :only => [:new, :create, :destroy]
-  resources :jobs, :only => [:create, :destroy, :show]
+  resources :jobs, :only => [:create, :destroy, :show, :new]
   resources :results
 
   match 'jobs/update_program_select/:id', :controller => 'jobs', :action => 'update_program_select'
@@ -26,62 +31,61 @@ Gpanda::Application.routes.draw do
   match '/jobs', :to => 'jobs#index'
 
   root :to => 'pages#home'
-    
+ 
+  if Rails.env.development?
+    mount ApiTaster::Engine => "/api_taster"
+    ApiTaster.routes do
 
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
+      get '/programs/show', {}
 
-  # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
-  # Keep in mind you can assign values other than :controller and :action
+      get '/programs/create', {}
 
-  # Sample of named route:
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
-  # This route can be invoked with purchase_url(:id => product.id)
+      get '/programs/destroy', {}
 
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+      get '/users', {}
 
-  # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+      post '/users', {}
 
-  # Sample resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
+      get '/users/new', {}
 
-  # Sample resource route with more complex sub-resources
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', :on => :collection
-  #     end
-  #   end
+      get '/users/:id/edit', {}
 
-  # Sample resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+      get '/users/:id', {}
 
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+      put '/users/:id', {}
 
-  # See how all your routes lay out with "rake routes"
+      delete '/users/:id', {}
 
-  # This is a legacy wild controller route that's not recommended for RESTful applications.
-  # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
-end
+      post '/sessions', {}
+
+      get '/sessions/new', {}
+
+      delete '/sessions/:id', {}
+
+      post '/jobs', {
+        program: "blast",
+        options: "default"
+      }
+
+      get '/jobs/:id', {}
+
+      delete '/jobs/:id', {}
+
+      get '/results', {}
+
+      post '/results', {}
+
+      get '/results/new', {}
+
+      get '/results/:id/edit', {}
+
+      get '/results/:id', {}
+
+      put '/results/:id', {}
+
+      delete '/results/:id', {}
+
+    end
+  end   
+
+ end

@@ -15,7 +15,7 @@
 
 class Job < ActiveRecord::Base
   
-  attr_accessible :name, :public, :genome, :method
+  attr_accessible :name, :public, :genome, :method, :user_id
   
   belongs_to :user
   has_many :results, :dependent => :destroy

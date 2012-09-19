@@ -6,16 +6,30 @@ class JobsController < ApplicationController
   end
   
   def create
-    @job  = current_user.jobs.build(params[:job])
+    # => This will just be me for right now while I"m testing
+    current_user = User.first
+    @job = Job.new     name: "Example42",
+                    user_id: 1,
+                     genome: "A. thaliana",
+                     method: "BLAST",
+                     public: true
+
     if @job.save
       flash[:success] = "Job submitted!"
+      genome = "TAIR10_pep_20101214"
+      sequence = 1
+      BlastWorker.perform_async(current_user.id, sequence, @job.id, genome)
+      TestWorker.perform_in(1.minute, @job.id, 300)
       redirect_to root_path
-      # It would be best just to be able to pass a string into this 
-      # system method in order to submit a job
-      system("bfulk@ssh './quick_script'")
     else
+      flash[:error] = "Your job wasn't submitted."
       render 'pages/home'
     end
+  end
+
+  def new
+    @job = Job.new
+    @programs = Program.all
   end
 
   def show
